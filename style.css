@@ -1,0 +1,378 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Main styles */
+
+body {
+  margin: 15px;
+  padding: 0;
+  font-family: Caveat;
+  line-height: 1.5;
+  color: rgb(79, 79, 79);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* Navigation styles */
+
+.containerNav {
+
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "logo navItem";
+  background: rgb(79, 79, 79);
+
+}
+
+.logo {
+
+  display: grid;
+  grid-area: logo;
+  font-family: Roboto;
+  font-size: 50px;
+  text-shadow: 2px 2px 8px, rgb(206, 177, 208);
+  padding: 20px;
+  text-align: center;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  height: 130px;
+  background-color: rgba(163, 245, 237, 0.817);
+  color: rgb(79, 79, 79);
+  width:auto;
+}
+
+.navItem {
+  display: inline-flex;
+  grid-area: row 1 column 2;
+  justify-content:space-evenly;
+  border-style: solid;
+  border-bottom: none;
+  border-left: none;
+  border-right-color: rgba(163, 245, 237, 0.817);
+  border-top: none;
+  padding: 10px;
+  margin: 15px;
+  width: 100%;
+  font-size: 25px;
+  font-family:Roboto;
+
+}
+
+
+/* navigation hover styles*/
+
+nav ul li a {
+  color: rgba(163, 245, 237, 0.817);
+  text-decoration: none;
+  
+}
+
+nav ul li a:hover {
+  color: rgb(206, 177, 208);
+  transition: 1s;
+}
+
+
+/* The hero image */
+.hero-banner {
+  display: flexbox;
+  background-image: url("images/sm-hero-bg.jpg");
+  background-position: relative;
+  opacity: 75%;
+  max-height: 200vh;
+
+}
+
+.hayley {
+  position: absolute;
+  top: 180px;
+  left: 15px;
+  height: 220px;
+  border: solid 5px;
+  border-color: rgb(79, 79, 79);
+  box-shadow: 5px 5px 5px rgb(79, 79, 79);
+ 
+}
+
+.hero-tag {
+
+  font-family: Roboto;
+  font-size: 50px;
+  text-align: right;
+  padding: 100px;
+  color: rgb(79, 79, 79);
+  text-shadow: 2px 2px 8px, rgb(206, 177, 208);
+
+
+}
+
+
+/* Grid Container and content */
+
+.containerGrid {
+  display: grid;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 200px auto auto;
+  grid-template-areas:
+
+    "Sidebar about about about"
+    "Sidebar work work work"
+    "Sidebar contact contact contact"
+
+}
+
+.Sidebar {
+  display: grid;
+  grid-area: Sidebar;
+  background-color: rgba(163, 245, 237, 0.817);
+  padding: 5%;
+  margin: 5%;
+  font-family: Roboto;
+  color: rgb(79, 79, 79);
+  font-size: 25px;
+  text-align: right;
+  border-right: solid 4px rgb(79, 79, 79);
+  gap: 2px;
+
+
+}
+
+#sideAbout {
+  display: grid;
+  grid-row: 1;
+  color: rgb(79, 79, 79);
+  padding: 5px;
+  margin: 10px;
+}
+
+#sideWork {
+  display: grid;
+  grid-row: 4;
+  color: rgb(79, 79, 79);
+  padding: 5px;
+  margin: 10px;
+}
+
+#sideContact {
+  display: grid;
+  grid-row: 16;
+  color: rgb(79, 79, 79);
+  padding: 5px;
+  margin: 10px;
+}
+
+#about {
+  grid-area: about;
+  min-height: fit-content;
+  display: grid;
+  background-color: rgb(236, 236, 129);
+  padding: 5%;
+  margin: 2%;
+  font-family: Roboto;
+  color: rgb(79, 79, 79);
+  border-right: solid 4px rgb(79, 79, 79);
+  gap: 2px;
+
+}
+
+.subGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+
+    "projectOne projectOne"
+    "projectTwo projectThree"
+    "projectFour projectFive"
+    "projectSix projectSeven";
+  grid-gap: 25px;
+}
+
+#work {
+  display: grid;
+  grid-area: work;
+  background-color: rgb(228, 172, 240);
+  padding: 5%;
+  margin: 2%;
+  font-family: Roboto;
+  color: rgb(79, 79, 79);
+  border-right: solid 4px rgb(79, 79, 79);
+  gap: 2px;
+}
+
+.projectOne {
+  display: grid;
+  grid-area: projectOne;
+  border: solid 5px;
+  border-color: rgb(79, 79, 79);
+  background-image: url("images/screenshot1.png");
+  opacity: 80%;
+  background-size: cover;
+  height: 400px;
+  box-shadow: 5px 5px 5px rgb(79, 79, 79);
+
+}
+
+.label {
+  display: inline-block;
+  vertical-align: bottom;
+  background-color: silver;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  font-size: 80%;
+}
+
+.projectTwo {
+  display: grid;
+  grid-area: projectTwo;
+  border: solid 5px;
+  border-color: rgb(79, 79, 79);
+  background-image: url("images/Quiz.jpg");
+  opacity: 80%;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  box-shadow: 5px 5px 5px rgb(79, 79, 79);
+
+}
+
+.projectThree {
+  display: grid;
+  grid-area: projectThree;
+  border: solid 5px;
+  border-color: rgb(79, 79, 79);
+  background-image: url("images/02-portfolio-1.jpg");
+  opacity: 80%;
+  background-size: cover;
+  height: 300px;
+  box-shadow: 5px 5px 5px rgb(79, 79, 79);
+
+}
+
+.projectFour {
+  display: grid;
+  grid-area: projectFour;
+  border: solid 5px;
+  border-color: rgb(79, 79, 79);
+  background-image: url("images/02-portfolio-2.jpg");
+  opacity: 80%;
+  background-size: cover;
+  height: 300px;
+  box-shadow: 5px 5px 5px rgb(79, 79, 79);
+
+}
+
+.projectFive {
+  display: grid;
+  grid-area: projectFive;
+  border: solid 5px;
+  border-color: rgb(79, 79, 79);
+  background-image: url("images/02-portfolio-3.jpg");
+  opacity: 80%;
+  background-size: cover;
+  height: 300px;
+  box-shadow: 5px 5px 5px rgb(79, 79, 79);
+
+}
+
+.projectSix {
+  display: grid;
+  grid-area: projectSix;
+  border: solid 5px;
+  border-color: rgb(79, 79, 79);
+  background-image: url("images/02-portfolio-4.jpg");
+  opacity: 80%;
+  background-size: cover;
+  height: 300px;
+  box-shadow: 5px 5px 5px rgb(79, 79, 79);
+
+}
+
+.projectSeven {
+  display: grid;
+  grid-area: projectSeven;
+  border: solid 5px;
+  border-color: rgb(79, 79, 79);
+  background-image: url("images/02-run-buddy.jpg");
+  opacity: 80%;
+  background-size: cover;
+  height: 300px;
+  box-shadow: 5px 5px 5px rgb(79, 79, 79);
+
+}
+
+.contact {
+  grid-area: contact;
+  align-content:space-between;
+  background-color: lightgrey;
+  padding: 5%;
+  margin: 2%;
+  font-family: Roboto;
+  color: rgb(79, 79, 79);
+  border-right: solid 4px rgb(79, 79, 79);
+  gap: 2px;
+
+}
+
+#contact {
+  font-display: unset;
+  display: inline !important;
+  padding-inline: 200px;
+
+}
+
+i {
+ 
+  display: inline-flex;
+  justify-content: stretch;
+  padding: 15px;
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+i a:hover {
+  color: rgb(206, 177, 208);
+  transition: 1s;
+}
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+
+  .icons {
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+
+  #heroGrid {
+    grid-template-areas:
+      "featuredProduct featuredProduct"
+      "secondaryProduct CTA";
+  }
+
+ 
+}
