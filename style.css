@@ -100,7 +100,7 @@ nav ul li a:hover {
 .hayley {
   position: absolute;
   top: 180px;
-  left: 40px;
+  left: 60px;
   height: 220px;
   width: 250px;
   border: solid 5px;
@@ -369,9 +369,43 @@ i a:hover {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .containerNav {
+    display: block;
+    
+
+  }
+
+  .hayley {
+    display: 100%;
+  }
+
+  .hero-banner {
     display: none;
+  }
+
+  .logo {
+  font-size:50px;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+ 
+  p {
+    font-size: 15px;
+  }
+ 
+h2 {
+  font-size: 15px;
+}
+
+
+
+  .containerNav {
+    display: block;
 
   }
 
@@ -383,10 +417,6 @@ i a:hover {
     display: none;
   }
 
-  .logo {
-    background-color: none;
-    font-size: 20%;
-  }
 
 
 
