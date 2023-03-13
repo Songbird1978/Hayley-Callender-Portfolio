@@ -154,6 +154,8 @@ nav ul li a:hover {
 
 }
 
+/* side bar elements */
+
 #sideAbout {
   display: grid;
   grid-row: 1;
@@ -178,6 +180,8 @@ nav ul li a:hover {
   margin: 10px;
 }
 
+/* About area */
+
 #about {
   grid-area: about;
   min-height: fit-content;
@@ -193,9 +197,9 @@ nav ul li a:hover {
 
 }
 
-i {
-  color: rgb(79, 79, 79);
-}
+
+
+/* work area & portfolio links */
 
 .subGrid {
   display: grid;
@@ -334,6 +338,8 @@ i {
 
 }
 
+/* contact area */
+
 .contact {
   grid-area: contact;
   align-content: space-between;
@@ -354,6 +360,9 @@ i {
 
 }
 
+/* Icons for Contact */
+
+
 i {
 
   display: inline-flex;
@@ -361,13 +370,15 @@ i {
   padding: 15px;
   margin-left: 20px;
   font-size: 30px;
+  color: rgb(79, 79, 79);
 }
 
 i a:hover {
   color: rgb(206, 177, 208);
   transition: 1s;
 }
-
+ 
+/* Media Queries  */
 
 @media only screen and (max-width: 1000px) {
   .containerNav {
@@ -401,8 +412,6 @@ i a:hover {
 h2 {
   font-size: 15px;
 }
-
-
 
   .containerNav {
     display: block;
