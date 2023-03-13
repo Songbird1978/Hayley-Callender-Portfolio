@@ -32,7 +32,7 @@ p {
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-areas: "logo navItem";
-  background: rgb(79, 79, 79);
+  background: whitesmoke;
 
 }
 
@@ -43,7 +43,7 @@ p {
   font-family: Roboto;
   font-size: 50px;
   text-shadow: 2px 2px 8px, rgb(206, 177, 208);
-  padding: 20px;
+  padding: 35px;
   text-align: center;
   margin-right: 15px;
   margin-top: 15px;
@@ -76,7 +76,7 @@ p {
 /* navigation hover styles*/
 
 nav ul li a {
-  color: rgba(163, 245, 237, 0.817);
+  color: rgb(79, 79, 79);
   text-decoration: none;
   
 }
@@ -91,8 +91,9 @@ nav ul li a:hover {
 .hero-banner {
   display: flexbox;
   background-image: url("images/sm-hero-bg.jpg");
-  background-position: relative;
   opacity: 75%;
+  background-position: relative;
+
   max-height: 200vh;
 
 }
@@ -100,8 +101,9 @@ nav ul li a:hover {
 .hayley {
   position: absolute;
   top: 180px;
-  left: 15px;
+  left: 40px;
   height: 220px;
+  width: 250px;
   border: solid 5px;
   border-color: rgb(79, 79, 79);
   box-shadow: 5px 5px 5px rgb(79, 79, 79);
@@ -181,14 +183,19 @@ nav ul li a:hover {
   grid-area: about;
   min-height: fit-content;
   display: grid;
-  background-color: rgb(236, 236, 129);
-  padding: 5%;
+  background-color: lightgrey;
+  padding: 4.5%;
   margin: 2%;
   font-family: Roboto;
+  font-size: 18px;
   color: rgb(79, 79, 79);
   border-right: solid 4px rgb(79, 79, 79);
   gap: 2px;
 
+}
+
+i {
+  color: rgb(79, 79, 79);
 }
 
 .subGrid {
@@ -207,7 +214,7 @@ nav ul li a:hover {
 #work {
   display: grid;
   grid-area: work;
-  background-color: rgb(228, 172, 240);
+  background-color: rgba(163, 245, 237, 0.817);
   padding: 5%;
   margin: 2%;
   font-family: Roboto;
@@ -216,8 +223,9 @@ nav ul li a:hover {
   gap: 2px;
 }
 
-.projectOne {
+.projectOne  {
   display: grid;
+  align-items: last baseline;
   grid-area: projectOne;
   border: solid 5px;
   border-color: rgb(79, 79, 79);
@@ -230,17 +238,21 @@ nav ul li a:hover {
 }
 
 .label {
-  display: inline-block;
-  vertical-align: bottom;
+  display: block;
   background-color: silver;
   height: fit-content;
   width: fit-content;
   padding: 10px;
-  font-size: 80%;
+  font-size: 60%;
+  border-top: solid 5px;
+  border-right: solid 5px;
+  border-color: rgb(79, 79, 79);
+  box-shadow: 5px 5px 5px rgb(79, 79, 79);
 }
 
 .projectTwo {
   display: grid;
+  align-items: last baseline;
   grid-area: projectTwo;
   border: solid 5px;
   border-color: rgb(79, 79, 79);
@@ -255,6 +267,7 @@ nav ul li a:hover {
 
 .projectThree {
   display: grid;
+  align-items: last baseline;
   grid-area: projectThree;
   border: solid 5px;
   border-color: rgb(79, 79, 79);
@@ -268,6 +281,7 @@ nav ul li a:hover {
 
 .projectFour {
   display: grid;
+  align-items: last baseline;
   grid-area: projectFour;
   border: solid 5px;
   border-color: rgb(79, 79, 79);
@@ -281,6 +295,7 @@ nav ul li a:hover {
 
 .projectFive {
   display: grid;
+  align-items: last baseline;
   grid-area: projectFive;
   border: solid 5px;
   border-color: rgb(79, 79, 79);
@@ -294,6 +309,7 @@ nav ul li a:hover {
 
 .projectSix {
   display: grid;
+  align-items: last baseline;
   grid-area: projectSix;
   border: solid 5px;
   border-color: rgb(79, 79, 79);
@@ -307,6 +323,7 @@ nav ul li a:hover {
 
 .projectSeven {
   display: grid;
+  align-items: last baseline;
   grid-area: projectSeven;
   border: solid 5px;
   border-color: rgb(79, 79, 79);
